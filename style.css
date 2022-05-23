@@ -1,0 +1,236 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  font-size: 1.6rem;
+  font-family: 'Cormorant Garamond', serif;
+  position: relative;
+}
+
+[id] {
+  scroll-margin-top: 84px;
+}
+
+@media (min-width: 992px) {
+  [id] {
+    scroll-margin-top: 69px;
+  }
+}
+
+.navbar {
+  background-color: #25272e;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.navbar-brand {
+  font-family: 'Gideon Roman', cursive;
+  font-size: 3rem;
+}
+
+.fa-gears {
+  font-size: 3rem;
+  color: white;
+  text-shadow: 0 5px 15px #bd7511;
+}
+
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-nav .nav-link.active {
+  font-size: 2.3rem;
+  color: #ddd;
+  text-transform: uppercase;
+}
+
+.navbar-toggler {
+  background-color: #bd7511;
+  font-size: 1.6rem;
+}
+
+.home {
+  height: 65rem;
+  background-image: url(./img/cybernetics-4219408_1920.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #ddd;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -5;
+}
+
+.home-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 3rem;
+  color: #ddd;
+}
+
+.home-text h3 {
+  font-family: 'Gideon Roman', cursive;
+  font-size: 4rem;
+  z-index: 110;
+}
+
+@media (max-width: 450px) {
+  .navbar-brand {
+    font-family: 'Gideon Roman', cursive;
+    font-size: 2rem;
+  }
+
+  .navbar-brand .fa-gears {
+    font-size: 2rem;
+    color: white;
+    text-shadow: 0 5px 15px #bd7511;
+  }
+  .home-text h3 {
+    font-family: 'Gideon Roman', cursive;
+    font-size: 3rem;
+    z-index: 110;
+  }
+  .home-text p {
+    font-family: 'Gideon Roman', cursive;
+    font-size: 2.2rem;
+    z-index: 110;
+  }
+}
+
+.home-text .btn {
+  padding: 1em 2em;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.aboutme h2,
+.services h2,
+.contact h2 {
+  font-size: 3rem;
+  margin: 2.5rem;
+  text-transform: uppercase;
+}
+
+.aboutme img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.aboutme-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutme-text p {
+  font-size: 2rem;
+  text-indent: 3rem;
+  text-align: justify;
+}
+
+.aboutme-text h3 {
+  font-size: 2.5rem;
+  text-indent: 3rem;
+}
+
+.card-body h5 {
+  font-size: 2.3rem;
+  text-align: center;
+}
+.card img {
+  height: 240px;
+  object-fit: cover;
+}
+
+.services-button {
+  position: relative;
+  display: flex;
+  height: 4rem;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+.services-button .btn {
+  padding: 0 2rem;
+  font-size: 1.6rem;
+  margin: 0.5rem;
+}
+
+footer {
+  background-color: #25272e;
+  color: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.contact h5,
+form h3 {
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+.contact p {
+  font-size: 2rem;
+}
+
+.fa-linkedin {
+  font-size: 4rem;
+}
+
+.form-label,
+.form-control,
+.form-select {
+  font-size: 1.8rem;
+}
+
+.carousel-item {
+  position: relative;
+  height: 60rem;
+  background-position: center;
+  background-size: cover;
+  z-index: 0;
+}
+
+.carousel-caption h5 {
+  font-size: 4rem;
+  z-index: 100;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+}
+
+.carousel-caption p {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  z-index: 15;
+}
+
+.carousel-img-one {
+  background-image: url(./img/micromontage-1523714_1920.jpg);
+}
+.carousel-img-two {
+  background-image: url(./img/industry-2692640_1920.jpg);
+}
+.carousel-img-three {
+  background-image: url(./img/robot-2791677_1920.jpg);
+}
